@@ -1,0 +1,250 @@
+body {
+    font-family: Georgia, serif;
+    font-size: 16pt;
+    line-height: 1.5;
+    position: relative;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #C9EDC9;
+}
+
+#headline {
+    padding-bottom: 20px;
+}
+
+#headline span {
+    display: block;
+}
+
+#tagline {
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color:#777;    
+}
+
+#tagline span {
+    white-space:nowrap;
+}
+
+
+.fixed {
+    position: fixed;
+}
+
+.theme {
+    float:left;
+}
+
+.theme:nth-child(odd) {
+    clear:left;
+}
+
+.theme:nth-child(even) {
+
+}
+
+
+.theme-title {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    font-size: 25.6px;
+    color: #297721;
+}
+
+.theme {
+    padding: 0 0 0 15px;
+}
+
+.quotation {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+
+.quotation blockquote {
+    padding: 10px 0px 10px 20px;
+}
+
+.short-attribution {
+}
+
+.full-attribution-click-me {
+}
+
+.full-attribution {
+    color: #FF1919;
+    border: 1px solid #FF1919;
+    padding: 3px;
+    margin: 10px 0;
+}
+
+/*sidebar stuff starts here */
+#sidebar.affix{
+    top: 20px;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.bs-docs-sidebar .nav li {
+
+}
+
+
+.bs-docs-sidebar .nav>li>a {
+    padding: 0 0 0 0;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #777;
+}
+
+
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    
+}
+
+
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #FF1919;
+    text-decoration: none;
+    background-color:transparent;
+}
+
+#letter-range1, #letter-range2,
+#letter-range3, #letter-range4,
+#letter-range5 {
+    text-align: left;
+    font-family: Georgia, serif;
+    font-size: 0.8em;
+    color: #BBB;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;
+}
+
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;
+}
+
+/* this puts the scroll bar on the menu when it overflows
+.bs-docs-sidebar > ul {
+    overflow-y: hidden;
+    height: 100%;
+}
+*/
+@media screen and (max-width: 768px){
+    .bs-docs-sidebar {
+        display:none;
+    }
+    .all-themes {
+        width: 100%;
+    }
+}
+
+/* admin page stuff */
+
+#admin-page, #edit-page {
+    font-family: Calibri, Helvetica, Arial, sans-serif;    
+}
+
+
+table {
+    margin: 10px 0;
+}
+
+th {
+    font-size: .7em;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0 8px;
+}
+
+
+#logout-form {
+    display: inline;
+}
+
+#admin-title {
+    text-align: left;
+}
+
+input[type="button"], input[type="submit"] {
+    background-color: white;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+#insert-submit {
+    background-color: white;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 5px;    
+}
+
+#insert, #edit, #edit-page {
+    font-size: 0.8em;
+}
+
+#insert {
+    position: relative;
+}
+
+
+/* preview of insert form */
+#preview-title {
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+
+}
+
+#preview {
+    font-family: Georgia, serif;
+    line-height: 1.5;
+
+}
+
+#preview2.theme-title {
+    width: 458px;
+}
+
+#preview2.affix-top {
+    width: 458px;
+}
+
+#preview2.affix {
+    top: 34px;
+    width: 458px;
+}
+
+#preview2.affix-bottom {
+    position: relative;
+    width: 458px;
+}
+
+/* media query to make the preview go away when the window isn't wide enough */
+@media screen and (max-width: 1200px) {
+#preview {
+    display: none;
+}
+}
